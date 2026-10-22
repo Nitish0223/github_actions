@@ -5,11 +5,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Build step
-        run: echo "Demo build"
-  test:
-    runs-on: ubuntu-22.04
-    needs: build
-    steps:
-      - name: Test step
-        run: echo "Test running"
-
+        run: echo "My name is ${{ vars.MY_NAME }}"
